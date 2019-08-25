@@ -2,11 +2,10 @@ Consider an array of integers
 Find the element where the sum of integers to the left of element is equal to the sum of the integers to the right of element.
 
 
-
-*************Programme************
+Finding the element which allows parity
+************Program************
   
-  
-  #include <stdio.h> 
+  #include <stdio.h>
   int checkParity(int array[],int n) 
    { 
 	  int i, j; 
