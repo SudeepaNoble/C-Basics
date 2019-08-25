@@ -1,0 +1,39 @@
+Consider an array of integers
+Find the element where the sum of integers to the left of element is equal to the sum of the integers to the right of element.
+
+
+************Programme************
+  
+  
+  #include <stdio.h> 
+  int spl(int array[],int n) 
+   { 
+	  int i, j; 
+	  int leftsum, rightsum; 
+	  for (i = 0; i < n; ++i) 
+	  {
+  		leftsum = 0; 
+  		for (j = 0; j < i; j++) 
+  			leftsum += array[j]; 
+  		rightsum = 0; 
+  		for (j = i + 1; j < n; j++) 
+  			rightsum += array[j]; 
+  		if (leftsum == rightsum) 
+  			return array[i]; 
+  	} 
+  	return -1; 
+  } 
+  
+  int main() 
+  { 
+  	int k,n; 
+  	printf("Enter the number of elements in the array: ");
+  	scanf("%d",&n);
+  	int array[n];
+  	for(k=0;k<n;k++)
+    {
+  	    scanf("%d",&array[k]);
+    }
+  	printf("%d", spl(array,n)); 
+  	return 0; 
+  } 
