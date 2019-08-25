@@ -2,11 +2,12 @@ Consider an array of integers
 Find the element where the sum of integers to the left of element is equal to the sum of the integers to the right of element.
 
 
-************Programme************
+
+*************Programme************
   
   
   #include <stdio.h> 
-  int spl(int array[],int n) 
+  int checkParity(int array[],int n) 
    { 
 	  int i, j; 
 	  int leftsum, rightsum; 
@@ -34,6 +35,6 @@ Find the element where the sum of integers to the left of element is equal to th
     {
   	    scanf("%d",&array[k]);
     }
-  	printf("%d", spl(array,n)); 
+  	printf("%d", checkParity(array,n)); 
   	return 0; 
   } 
