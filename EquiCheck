@@ -2,11 +2,11 @@ Consider an array of integers
 Find the element where the sum of integers to the left of element is equal to the sum of the integers to the right of element.
 
 
-Finding the element which allows parity
+Finding the element which allows equilibrium on its other two sides.
 ************Program************
   
   #include <stdio.h>
-  int checkParity(int array[],int n) 
+  int checkEquilibrium(int array[],int n) 
    { 
 	  int i, j; 
 	  int leftsum, rightsum; 
@@ -34,6 +34,6 @@ Finding the element which allows parity
     {
   	    scanf("%d",&array[k]);
     }
-  	printf("%d", checkParity(array,n)); 
+  	printf("%d", checkEquilibrium(array,n)); 
   	return 0; 
   } 
