@@ -1,9 +1,10 @@
 Consider an array of integers
 Find the element where the sum of integers to the left of element is equal to the sum of the integers to the right of element.
+That element is now an integer which maintains equilibrium. and that is why, the method name is checkEquilibrium.
 
 
 Finding the element which allows equilibrium on its other two sides.
-************Program************
+  ************Code in the XML File ************
   
   #include <stdio.h>
   int checkEquilibrium(int array[],int n) 
