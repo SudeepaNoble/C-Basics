@@ -5,5 +5,35 @@ That element is now an integer which maintains equilibrium. and that is why, the
 
 Finding the element which allows equilibrium on its other two sides.
   ************Code in the XML File ************
+  #include <stdio.h>
+  int checkEquilibrium(int array[],int max_num) 
+   { 
+	  int i, j; 
+	  int leftsum, rightsum; 
+	  for (i = 0; i < max_num; ++i) 
+	  {
+  		leftsum = 0; 
+  		for (j = 0; j < i; j++) 
+  			leftsum += array[j]; 
+  		rightsum = 0; 
+  		for (j = i + 1; j < max_num; j++) 
+  			rightsum += array[j]; 
+  		if (leftsum == rightsum) 
+  			return i+1; 
+  	} 
+  	return -1; 
+  } 
   
- 
+  int main() 
+  { 
+  	int k,max_num; 
+  	printf("Enter the number of elements in the array: ");
+  	scanf("%d",&max_num);
+  	int array[max_num];
+  	for(k=0;k<max_num;k++)
+    {
+  	    scanf("%d",&array[k]);
+    }
+  	printf("%dth position", checkEquilibrium(array,max_num)); 
+  	return 0; 
+  } 
