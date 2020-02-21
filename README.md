@@ -1,2 +1,2 @@
 # C-Basics
-Few problems in c 
+Few problems in C.
