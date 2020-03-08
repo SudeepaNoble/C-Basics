@@ -1,2 +1,2 @@
 # C and CPP problems
-Few problems in C and C++.
+A few problems in C and C++.
